@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1>Brent Walther's Blog</h1>
+<div class="text-center">
+  <ul class="list-inline">
+    {% for page in site.data.menu_items %}
+      <li>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<ul class="list-unstyled" id="post-list">
+  {% for post in site.posts %}
+    <li>
+      <code>{{ post.date | date_to_string }}</code> > <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
