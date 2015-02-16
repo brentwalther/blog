@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Advanced Constraint Techniques for Rails Routing
 category: code
 ---

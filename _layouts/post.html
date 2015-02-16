@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+    <div class="container-fluid" id="nav-container">
+      <div class="row">
+        <div class="col-md-12">
+          <a href="/" class="btn btn-default">&lt; Home</a>
+        </div>
+      </div>
+    </div>
+    <div class="container post-wrapper">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 id="title">{{ page.title }}</h1>
+          <h5 class="text-muted">{{ page.date | date_to_string }} // in: {{ page.category }}</h5>
+          {{ content }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 divider text-center">
+          <p>Author: <a href="www.brentwalther.net">Brent Walther</a></p>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+<html>

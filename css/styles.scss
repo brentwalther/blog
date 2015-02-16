@@ -1,12 +1,35 @@
 ---
 ---
 
-ul#post-list li {
-  code {
-    color: inherit;
-    background-color: inherit;
+#nav-container {
+  padding-top:    15px;
+  padding-bottom: 15px;
+}
+
+.post-wrapper {
+  h1#title {
+    font-size: 5rem;
   }
-  a {
-    padding: 2px 4px;
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+ul#post-list {
+  padding-bottom: 10px;
+  li {
+    code {
+      color: inherit;
+      background-color: inherit;
+    }
+    a {
+      padding: 2px 4px;
+    }
   }
+}
+
+blockquote {
+  font-style: italic;
 }
