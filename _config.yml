@@ -7,3 +7,5 @@ defaults:
       layout: "default"
       author: "Brent Walther"
       permalink: :title
+
+exclude: [README.md, Gemfile, Gemfile.lock]
