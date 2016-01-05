@@ -4,22 +4,26 @@
   <body>
     <div class="container-fluid" id="nav-container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-2">
           <a href="/" class="btn btn-default">&lt; Home</a>
         </div>
+        <div class="col-md-8 text-center">
+          <h1 class="title">Brent Walther's Blog</h1>
+        </div>
       </div>
+      <hr>
     </div>
     <div class="container post-wrapper">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h1 id="title">{{ page.title }}</h1>
-          <h5 class="text-muted">{{ page.date | date_to_string }} // in: {{ page.category }}</h5>
+          <h1 class="title">{{ page.title }}</h1>
+          <h5 class="text-muted">{{ page.date | date_to_string }} // in: {{ page.category }} {% if page.tags != empty %}// tags: {{ page.tags | array_to_sentence_string }}{% endif %}</h5>
           {{ content }}
         </div>
       </div>
       <div class="row">
         <div class="col-md-8 col-md-offset-2 divider text-center">
-          <p>Author: <a href="www.brentwalther.net">Brent Walther</a></p>
+          <p>Author: <a href="http://www.brentwalther.net">Brent Walther</a></p>
         </div>
       </div>
     </div>

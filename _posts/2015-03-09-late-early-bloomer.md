@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: Late Early Bloomer
 category: life
 ---
 The tech bubble is taking over our generation by storm. At one point I felt like I was ahead of the game with my programming skills. I still know that my personal skillset has grown tremendously since I started studying computer science but I can't help but notice that there are more and more young people getting into programming earlier in life.

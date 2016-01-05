@@ -2,8 +2,14 @@
 layout: post
 title: How to replace Unity with i3 window manager on Ubuntu 12.04
 category: tech
+tags:
+  - i3
+  - i3wm
+  - window manager
+  - ubuntu
 ---
 So you've decided that you don't like Unity and you'd like to replace it. [i3 window manager](http://i3wm.org/ "http://i3wm.org/") is a popular tiling window manager that is easy to learn and can greatly improve productivity. Once you've gotten the hang of all the hotkeys, you'll find that you rarely need a mouse or touchpad anymore. I personally became much more productive when I installed it, but I had some trouble finding good information on how to completely replace Unity a still retain the  default Ubuntu login manager called lightdm.
+
 ###Installing i3
 In order to install the stable version of i3 on Ubuntu, open up your terminal using `Ctrl + Alt + T` and run the following commands under root (preferably using `sudo`):
 
@@ -44,7 +50,7 @@ gsettings set org.gnome.desktop.background show-desktop-icons false
 ###Configuring `lightdm`
 Since we removed Unity, we need to reconfigure the login manager `lightdm` to login with i3 by default. This can be accomplished with a few simple steps:
 
-1. Run the command `sudo nano ~/.xinitrc` 
+1. Run the command `sudo nano ~/.xinitrc`
 2. Type into the file `exec i3`
 3. Save the file using `Ctrl + O`
 4. Exit the file using `Ctrl + X`

@@ -2,11 +2,16 @@
 layout: post
 title: Getting started and going further with i3 window manager
 category: tech
+tags:
+  - i3
+  - i3wm
+  - linux
+  - window manager
 ---
 If you're new to i3 window manager (i3wm) you probably aren't aware of the customization capabilities it has. I present here a few configuration customizations that I've accumulated on my own machine that I encourage you to make use of for your own.
 
 ###Adding custom i3 key bindings
-After you install i3 you should have a configuration file located at `~/.i3/config`. This config file contains all the key bindings for i3. The default configuration is pretty good but you may desire to add your own key bindings for custom actions. If you look through the file, you can see that it's filled with `bindsym` and `bindcode` lines followed by key combinations and commands. It's fairly easy to add your own. 
+After you install i3 you should have a configuration file located at `~/.i3/config`. This config file contains all the key bindings for i3. The default configuration is pretty good but you may desire to add your own key bindings for custom actions. If you look through the file, you can see that it's filled with `bindsym` and `bindcode` lines followed by key combinations and commands. It's fairly easy to add your own.
 
 The simplest way to add a new binding is using `xev` to find the appropriate key code and then using `bindcode` in your configuration file. I wanted to bind my laptops native Volume+ and Volume- icons on my keyboard. Adding the custom binding was easy:
 
