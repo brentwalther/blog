@@ -9,3 +9,6 @@ defaults:
       permalink: :title
 
 exclude: [README.md, Gemfile, Gemfile.lock]
+
+gems:
+  - jekyll-sitemap
